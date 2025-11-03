@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin:0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color:#e0e0e0;
+        }
+        header{
+            background-color: #1f1f1f;
+            padding:20px;
+            text-align: center;
+        }
+        header h1{
+            margin:0;
+            font-size: 2em;
+        }
+        nav ul{
+            list-style:none;
+            padding:0;
+            margin-top:10px;
+            display:flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a{
+            color:#90caf9;
+            text-decoration: none;
+        }
+        nav a :hover{
+            text-decoration: underline;
+        }
+        section{
+            padding: 40px 20px;
+            max-width: 800px;
+            margin:auto;
+        }
+        .project{
+            background-color: #1e1e1e;
+            padding:20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #aaa;
+        }
+
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 3px solid #90caf9;
+            transition: transform 0.3s ease;
+        }
+
+
+
+        @media (max-width: 600px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+        section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Ibad-Web Developer</title>
+</head>
+<body>
+<header>
+    <h1>Shaikh Mohammed Ibad Wasim Raja</h1>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+    <section id = "about">
+        <h2>About me</h2>
+        <div class="about-container">
+            <img src="me.jpeg" alt="profile picture" height="200" width="200"s >
+        <p>"Hello! I'm Shaikh Ibad, a passionate and enthusiastic Fresher Web Developer currently completing my BCA from Shree Swaminarayan Gadi Institute of Technology. My portfolio showcases projects where I've applied strong fundamentals in C language HTML, Css  to build practical, user-focused web solutions. I am eager to apply my technical skills and dedication to continuous learning in a challenging professional environment."</p>
+        </div>
+    </section>
+<section id = "projects">
+    <h2>Projects Title</h2>
+    <p>[Project1]</p>
+    <h2>Projects Title</h2>
+    <p>[Project2]</p>
+    <h2>Projects Title</h2>
+    <p>[Project3]</p>
+</section>
+<section id = "contact">
+    <h2>Contact me:</h2>
+    <p>Email:ibadshaikh146@gmail.com</p>
+    <p>Phone:+91 9099891934</p>
+    <p>LinkedIN:<a href="https://www.linkedin.com/in/ibad-shaikh-810884356/?trk=opento_sprofile_details">Ibad Shaikh</a></p>
+</section>
+<footer>
+<section id = "footer">
+<p>& copy ;2025 Shaikh Mohammed Ibad Wasim Raja. ALL RIGHTS RESERVED</p>
+</section>
+</body>
+</html>
